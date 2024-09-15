@@ -3,65 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vishwas Gondaliya | Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vishwas Gondaliya - Portfolio</title>
+    <!-- Importing new fonts for modern styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <nav class="sidebar">
-            <div class="profile-photo">
-                <img src="your-photo.jpg" alt="Vishwas Gondaliya">
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main Content -->
-        <div class="content">
-            <section id="about">
-                <h1>About Me</h1>
-                <p>I'm a passionate DevOps Engineer with expertise in Linux environments, cloud automation, and SAP Basis.</p>
-            </section>
-
-            <section id="experience">
-                <h1>Experience</h1>
-                <div class="experience-item">
-                    <h3>TATA Consultancy Services</h3>
-                    <p>Managed 600+ Linux servers, automated deployments with Docker and Ansible, and integrated SAP systems with Azure.</p>
-                </div>
-            </section>
-
-            <section id="projects">
-                <h1>Projects</h1>
-                <div class="project-item">
-                    <h3>Kubernetes Deployment</h3>
-                    <p>Deployed a scalable Kubernetes cluster for microservices using Helm.</p>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Linux, Docker, Kubernetes, Terraform</li>
-                    <li>AWS, Azure, GCP</li>
-                    <li>CI/CD with Jenkins, GitHub Actions</li>
-                </ul>
-            </section>
-
-            <section id="contact">
-                <h1>Contact</h1>
-                <p>Email: <a href="mailto:vishwasgondaliyawork@gmail.com">vishwasgondaliyawork@gmail.com</a></p>
-                <p>Phone: (437) 557-4896</p>
-            </section>
+    <!-- Header (Navbar Links) -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <nav class="top-nav">
+                <a href="#summary" class="nav-link">ABOUT</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#certifications" class="nav-link">CERTIFICATIONS</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#education" class="nav-link">EDUCATION</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="summary" class="section">
+        <div class="container about-container">
+            <div class="about-name">Vishwas Gondaliya</div>
+            <p class="contact-details">
+                Scarborough, Ontario, Canada · (437) 557-4896 · <a href="mailto:vishwasgondaliyawork@gmail.com">vishwasgondaliyawork@gmail.com</a>
+            </p>
+            <p class="summary">Enthusiastic IT professional with a strong background in DevOps practices and advanced SAP Basis administration. Proficient in managing Linux-based environments, automating system processes, and implementing CI/CD pipelines. Experienced in fast-paced, large-team settings, and adept at optimizing system performance and executing complex technical tasks. Seeking a DevOps Engineer Co-op role to contribute to innovative projects and further hone my skills in cloud technologies and automation.</p>
+
+            <!-- Adding LinkedIn, GitHub, and Resume icons -->
+            <div class="about-icons">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn Icon">
+                </a>
+                <a href="https://www.github.com" target="_blank">
+                    <img src="github.png" alt="GitHub Icon">
+                </a>
+                <a href="resume.pdf" target="_blank">
+                    <img src="resume.png" alt="Resume Icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h3>TATA Consultancy Services - Ahmedabad, India</h3>
+            <p>System Administrator – SAP Basis Consultant | 2020 – 2023</p>
+            <ul>
+                <li>Managed and maintained over 600 Linux servers, executing all SAP Basis tasks in a Linux environment, including system monitoring, performance tuning, and troubleshooting.</li>
+                <li>Worked closely with a large team of developers, DBAs, and network engineers in a fast-paced environment to resolve complex technical issues, ensuring project milestones were met on time.</li>
+                <li>Streamlined kernel upgrades and software patching processes through shell scripting on Linux servers, reducing manual intervention by 80% and ensuring consistent system performance.</li>
+                <li>Automated deployment processes using Jenkins, Docker, and Ansible in a Linux environment, significantly reducing deployment times and improving system reliability.</li>
+                <li>Integrated SAP systems with Azure cloud platforms, leveraging Docker for containerization and ensuring seamless operations across hybrid cloud environments.</li>
+                <li>Developed and tested disaster recovery plans on Linux servers, including regular system backups and restorations, to ensure business continuity in case of critical failures.</li>
+                <li>Successfully installed, upgraded, and performed system refreshes for SAP landscapes on Linux servers, ensuring high availability and minimal downtime across a large-scale enterprise environment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <ul>
+                <li><strong>Kubernetes Deployment:</strong> Deployed a Kubernetes cluster for a microservices-based application using Helm for package management, ensuring high availability and scalability.</li>
+                <li><strong>Infrastructure as Code:</strong> Developed Terraform scripts for automating AWS resource provisioning, enabling on-demand scalability and optimized cost management.</li>
+                <li><strong>CI/CD Pipeline:</strong> Implemented a CI/CD pipeline for a web application using Jenkins, Git, and Docker, reducing deployment time by 50% and enhancing code quality through automated testing and integration.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <p>AWS Solutions Architect – Associate</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <ul>
+                <li><strong>Technical Skills:</strong> Linux Server Management, SAP Basis Administration, Infrastructure Automation, System Installation and Upgrades, Technical Support</li>
+                <li><strong>Tools and Technologies:</strong> Linux, Docker, Kubernetes, Git, Helm, Jenkins, GitHub Actions, Terraform, Ansible</li>
+                <li><strong>Programming Languages:</strong> Shell Scripting, Java, JavaScript, Node.js, Express.js, Python</li>
+                <li><strong>Databases:</strong> HANA, MongoDB, MySQL</li>
+                <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <!-- First Education Entry -->
+            <div class="education-entry">
+                <div class="education-info">
+                    <div class="course-name">
+                        Post-graduation in DevOps for Cloud Computing
+                    </div>
+                    <div class="duration">
+                        2023-2025
+                    </div>
+                </div>
+                <div class="college-name">
+                    Lambton College
+                </div>
+            </div>
+
+            <!-- Second Education Entry -->
+            <div class="education-entry">
+                <div class="education-info">
+                    <div class="course-name">
+                        Bachelor of Engineering in Information Technology
+                    </div>
+                    <div class="duration">
+                        2016-2020
+                    </div>
+                </div>
+                <div class="college-name">
+                    VVP Engineering College
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for navbar functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            // Initially show only the first section (ABOUT)
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById('summary').style.display = 'block';
+
+            // Set the "About" button as active by default
+            navLinks[0].classList.add('active');
+
+            // Add click event to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+
+                    // Hide all sections
+                    sections.forEach(section => section.style.display = 'none');
+
+                    // Show the clicked section
+                    document.getElementById(targetId).style.display = 'block';
+
+                    // Remove active class from all buttons and set inactive
+                    navLinks.forEach(nav => {
+                        nav.classList.remove('active');
+                        nav.classList.add('inactive');
+                    });
+
+                    // Set the clicked button as active
+                    this.classList.add('active');
+                    this.classList.remove('inactive');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
